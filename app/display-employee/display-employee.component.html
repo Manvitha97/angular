@@ -1,0 +1,21 @@
+<h1 align=center> Employee details:</h1>
+<table border="1" align=center>
+    <tr>
+        <td>id:</td>
+        <td>name:</td>
+        <td>dateOfBirth:</td>
+        <td>gender:</td>
+        <td>sal:</td>
+    </tr>
+    <tr>
+        <tr *ngFor="let emp of employees">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.dateOfBirth}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.sal}}</td>
+        <td><button (click)="delete(emp.id)" type="button">Delete</button>
+            </td>
+    </tr>
+</table>
+

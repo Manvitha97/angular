@@ -1,0 +1,29 @@
+<br><br>
+<h1 align="center">Add Product Details</h1>
+<form align="center" #get="ngForm" (ngSubmit)="add(get.value)">
+    <table align="center" border="5">
+        <tr>
+            <td>Product ID :</td>
+            <td><input type="text" name="id" ngModel /></td>
+        </tr>
+        <tr>
+            <td>Product Name :</td>
+            <td><input type="text"  name="name" ngModel/></td>
+        </tr>
+        <tr>
+            <td >Product Price :</td>
+            <td><input type="text"  name="price" ngModel/></td>
+        </tr>
+        <tr>
+            <td>Product Category :</td>
+            <td><input type="text"  name="category" ngModel/></td>
+        </tr>
+      
+    </table><br><br>
+        <input type="submit" value="Add Product"/>
+</form><br><br>
+<form align="center" *ngIf="createdFlag;">
+    <h1>Succesfully Added!!!</h1>
+</form>
+
+
